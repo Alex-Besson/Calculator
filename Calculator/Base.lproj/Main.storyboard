@@ -4,6 +4,11 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="digital-7.ttf">
+            <string>Digital-7</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -44,6 +49,17 @@
                                     <constraint firstAttribute="height" constant="73" id="FDn-qb-erK"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="78900" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWQ-wT-eQg">
+                                <rect key="frame" x="188" y="158" width="224" height="39"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="wjk-Zd-ciD"/>
+                                    <constraint firstAttribute="width" constant="224" id="xvR-8m-XNR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="45"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="qva-qK-9eG">
                                 <rect key="frame" x="204" y="274" width="192" height="308"/>
                                 <subviews>
@@ -228,6 +244,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="8wv-3G-KV4" firstAttribute="top" secondItem="gWQ-wT-eQg" secondAttribute="bottom" constant="27" id="3tr-d4-Lyu"/>
                             <constraint firstItem="qva-qK-9eG" firstAttribute="top" secondItem="8wv-3G-KV4" secondAttribute="bottom" constant="2" id="8gl-lX-hNG"/>
                             <constraint firstItem="UEm-YO-8IG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="92" id="DvK-mK-1H0"/>
                             <constraint firstItem="UEm-YO-8IG" firstAttribute="leading" secondItem="Xq7-pF-qQL" secondAttribute="leading" id="EdO-3S-bdF"/>
@@ -237,6 +254,7 @@
                             <constraint firstItem="8wv-3G-KV4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pvs-NT-s5M"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Xq7-pF-qQL" secondAttribute="bottom" constant="10" id="Rx0-vz-m0S"/>
                             <constraint firstItem="nBe-nD-blC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="c6w-bN-UHN"/>
+                            <constraint firstItem="gWQ-wT-eQg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="doV-r9-cKD"/>
                             <constraint firstItem="Xq7-pF-qQL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ggn-SY-2da"/>
                             <constraint firstItem="Xq7-pF-qQL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="go5-HL-yQj"/>
                             <constraint firstItem="qva-qK-9eG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hS9-50-1Qs"/>

@@ -14,6 +14,7 @@
 		FA37C1A91BEB21080030501C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA37C1A71BEB21080030501C /* LaunchScreen.storyboard */; };
 		FA37C1B41BEB21080030501C /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA37C1B31BEB21080030501C /* CalculatorTests.swift */; };
 		FA37C1BF1BEB21080030501C /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA37C1BE1BEB21080030501C /* CalculatorUITests.swift */; };
+		FA3B4BDF1BEC091B00C92D0D /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA3B4BDE1BEC091B00C92D0D /* digital-7.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		FA37C1BA1BEB21080030501C /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA37C1BE1BEB21080030501C /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		FA37C1C01BEB21080030501C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA3B4BDE1BEC091B00C92D0D /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		FA37C19D1BEB21080030501C /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				FA3B4BDE1BEC091B00C92D0D /* digital-7.ttf */,
 				FA37C19E1BEB21080030501C /* AppDelegate.swift */,
 				FA37C1A01BEB21080030501C /* ViewController.swift */,
 				FA37C1A21BEB21080030501C /* Main.storyboard */,
@@ -232,6 +235,7 @@
 				FA37C1A91BEB21080030501C /* LaunchScreen.storyboard in Resources */,
 				FA37C1A61BEB21080030501C /* Assets.xcassets in Resources */,
 				FA37C1A41BEB21080030501C /* Main.storyboard in Resources */,
+				FA3B4BDF1BEC091B00C92D0D /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +486,7 @@
 				FA37C1C51BEB21080030501C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA37C1C61BEB21080030501C /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				FA37C1C81BEB21080030501C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA37C1C91BEB21080030501C /* Build configuration list for PBXNativeTarget "CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +504,7 @@
 				FA37C1CB1BEB21080030501C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
