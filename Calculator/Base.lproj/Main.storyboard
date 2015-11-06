@@ -49,7 +49,7 @@
                                     <constraint firstAttribute="height" constant="73" id="FDn-qb-erK"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="78900" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWQ-wT-eQg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWQ-wT-eQg">
                                 <rect key="frame" x="188" y="158" width="224" height="39"/>
                                 <animations/>
                                 <constraints>
@@ -327,6 +327,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="lblCounter" destination="gWQ-wT-eQg" id="gam-yN-iRz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
