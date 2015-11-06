@@ -15,6 +15,7 @@
 		FA37C1B41BEB21080030501C /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA37C1B31BEB21080030501C /* CalculatorTests.swift */; };
 		FA37C1BF1BEB21080030501C /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA37C1BE1BEB21080030501C /* CalculatorUITests.swift */; };
 		FA3B4BDF1BEC091B00C92D0D /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA3B4BDE1BEC091B00C92D0D /* digital-7.ttf */; };
+		FA6C6E7C1BEC66BC00E692CF /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = FA6C6E7B1BEC66BC00E692CF /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FA37C1BE1BEB21080030501C /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		FA37C1C01BEB21080030501C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA3B4BDE1BEC091B00C92D0D /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
+		FA6C6E7B1BEC66BC00E692CF /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				FA3B4BDE1BEC091B00C92D0D /* digital-7.ttf */,
+				FA6C6E7B1BEC66BC00E692CF /* btn.wav */,
 				FA37C19E1BEB21080030501C /* AppDelegate.swift */,
 				FA37C1A01BEB21080030501C /* ViewController.swift */,
 				FA37C1A21BEB21080030501C /* Main.storyboard */,
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA6C6E7C1BEC66BC00E692CF /* btn.wav in Resources */,
 				FA37C1A91BEB21080030501C /* LaunchScreen.storyboard in Resources */,
 				FA37C1A61BEB21080030501C /* Assets.xcassets in Resources */,
 				FA37C1A41BEB21080030501C /* Main.storyboard in Resources */,
