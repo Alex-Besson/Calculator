@@ -24,10 +24,11 @@ class ViewController: UIViewController {
     
     var buttonSound = AVAudioPlayer()
     
-    var runninngNumber = ""
+    var runningNumber = ""
     var leftValueString = ""
     var rightValueString = ""
-    var currentOperation: Operation = .Empty
+    var result = ""
+    var currentOperation : Operation = .Empty
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,12 +48,11 @@ class ViewController: UIViewController {
     @IBAction func numberPressed(btn: UIButton) {
         playSound()
         
-        runninngNumber += "\(btn.tag)"
-        lblCounter.text = runninngNumber
+        runningNumber += "\(btn.tag)"
+        lblCounter.text = runningNumber
     }
     
     @IBAction func btnMinusPressed(sender: AnyObject) {
-        playSound()
         processOperation(Operation.Subtract)
     }
     
@@ -69,26 +69,59 @@ class ViewController: UIViewController {
     }
     
     @IBAction func btnEqualsPressed(sender: AnyObject) {
-        processOperation(currentOperation)
+        
+        if currentOperation != .Empty {
+            processOperation(currentOperation)
+        } else {
+            
+        }
+        
+        
     }
     
     @IBAction func btnClear(sender: AnyObject) {
-        processOperation(Operation.Clear)
+        playSound()
+        
+        currentOperation = .Empty
+        result = ""
+        runningNumber = ""
+        leftValueString = ""
+        rightValueString = ""
+        lblCounter.text = ""
+        
     }
     
     func processOperation(op: Operation) {
         playSound()
         
         if currentOperation != .Empty {
-            runninngNumber = rightValueString
-            rightValueString = ""
+            
+            if runningNumber != "" {
+                rightValueString = runningNumber
+                runningNumber = ""
+                
+                if currentOperation == .Multiply {
+                    result = "\(Double(leftValueString)! * Double(rightValueString)!)"
+                } else if currentOperation == .Divide {
+                    result = "\(Double(leftValueString)! / Double(rightValueString)!)"
+                } else if currentOperation == .Add {
+                    result = "\(Double(leftValueString)! + Double(rightValueString)!)"
+                } else if currentOperation == .Subtract {
+                    result = "\(Double(leftValueString)! - Double(rightValueString)!)"
+                }
+                
+                leftValueString = result
+                lblCounter.text = result
+ 
+            }
+            
+            currentOperation = op
             
         } else {
-            leftValueString = runninngNumber
-            runninngNumber = ""
+            leftValueString = runningNumber
+            runningNumber = ""
             currentOperation = op
         }
-        
     }
     
     func playSound() {
@@ -98,7 +131,6 @@ class ViewController: UIViewController {
         }
         buttonSound.play()
     }
-    
 
 
     override func didReceiveMemoryWarning() {
